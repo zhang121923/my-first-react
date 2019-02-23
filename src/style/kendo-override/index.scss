@@ -1,0 +1,17 @@
+.override {
+    .k-dialog-wrapper {
+        .k-dialog {
+            .k-dialog-titlebar {
+                padding: 10px 16px;
+                background-color: #5F9EA0;
+            }
+            .k-dialog-content {
+                padding: 10px
+            }
+        }
+    }
+}
+
+.k-animation-container {
+    z-index: 99999;
+}

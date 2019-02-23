@@ -1,0 +1,61 @@
+.app {
+  .navigate-page {
+    .left-navigate {
+      position: absolute;
+      top: 30%;
+      left: 0px;
+      width: 105px;
+      height: 100px;
+      z-index: 100;
+      ul {
+        width: inherit;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        margin: 5px;
+        margin-inline-start: 0px;
+        margin-inline-start: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        padding-inline-start: 0px;
+        .nav-link {
+          width: 100%;
+          height: 50%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          text-decoration: none;
+          user-select: none;
+          color: #314159;
+          cursor: pointer;
+          &:hover {
+            background-color: #bee8e7;
+          }
+          &:visited {
+            color: #314159;
+          }
+          &:actived {
+            color: #314159;
+          }
+        }
+      }
+      &:after {
+        content: "";
+        background-image: url("../../assets/image/left-nav-bg.png");
+        background-position: center;
+        width: 120px;
+        height: 100px;
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        z-index: -1;
+      }
+    }
+  }
+}
