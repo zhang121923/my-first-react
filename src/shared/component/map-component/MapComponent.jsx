@@ -2,6 +2,8 @@ import * as React from 'react';
 import echarts from 'echarts';
 import PropTypes from 'prop-types';
 
+import './style.scss'
+
 let propTypes = {
     width: PropTypes.number,
     height: PropTypes.number,
@@ -37,7 +39,7 @@ class MapComponnet extends React.Component {
 
     render() {
         return (
-            <div style={this.mapStyle} ref={this.mapRefs}></div>
+            <div className="map-content" style={this.mapStyle} ref={this.mapRefs}></div>
         );
     }
 }

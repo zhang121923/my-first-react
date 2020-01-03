@@ -1,7 +1,7 @@
 import React from "react";
-import RDOM from "react-dom";
+import ReactDOM from "react-dom";
 import './style.scss';
 
 import Portal from './portal/Portal.jsx';
 
-RDOM.render(<Portal />, document.querySelector("#root"));
+ReactDOM.render(<Portal/>, document.querySelector("#root"));

@@ -1,12 +1,14 @@
 import * as React from 'react';
+import './style.scss'
 
 import MapComponnet from '../shared/component/map-component/MapComponent.jsx';
+
 class Detail extends React.Component {
     constructor(props) {
         super(props);
         this.options = {
-            width: 900,
-            height: 500,
+            width: 1200,
+            height: 800,
             map: 'hubei',
             options: {
                 visualMap: [{
@@ -74,7 +76,7 @@ class Detail extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="map-area">
                 <MapComponnet {...this.options}></MapComponnet>
             </div>
         );
