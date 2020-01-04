@@ -30,7 +30,8 @@ module.exports = {
                 "loader": "babel-loader",
                 "query": {
                     "presets": [
-                        "react", "es2015"
+                        "es2015",
+                        "react"
                     ],
                     "plugins": [
                         "transform-runtime"

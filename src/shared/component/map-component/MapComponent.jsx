@@ -37,6 +37,18 @@ class MapComponnet extends React.Component {
             });
     }
 
+    componentWillReceiveProps(nextProps) {
+        const that = this;
+        fetch(`./map/${nextProps.map}.json`)
+            .then(res => res.json())
+            .then(data => {
+                const mapDOM = that.mapRefs.current;
+                that.map = echarts.init(mapDOM);
+                echarts.registerMap(nextProps.map, data);
+                that.map.setOption(nextProps.options);
+            });
+    }
+
     render() {
         return (
             <div className="map-content" style={this.mapStyle} ref={this.mapRefs}></div>

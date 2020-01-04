@@ -1,3 +1,20 @@
 .map-area {
+  position: relative;
   text-align: center;
+
+  .map-select-area {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 200;
+
+    label {
+      font-size: 18px;
+    }
+
+    select {
+      width: 100px;
+      height: 20px;
+    }
+  }
 }
